@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Hut</title>
+    <link rel="stylesheet" href="/styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">Burger Hut</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Order Online</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bite into Happiness</h1>
+            <button>Order Now</button>
+        </div>
+    </section>
+    <section class="featured">
+        <h2>Top Sellers</h2>
+        <div class="top-sellers">
+            <div class="item">
+                <img src="/img/burger1.jpg" alt="Burger 1">
+                <h3>Classic Burger</h3>
+                <p>Juicy beef patty with lettuce, tomato, and cheese.</p>
+            </div>
+            <div class="item">
+                <img src="/img/burger2.jpg" alt="Burger 2">
+                <h3>Cheese Lover</h3>
+                <p>Double cheese, beef patty, and a special sauce.</p>
+            </div>
+            <div class="item">
+                <img src="/img/burger3.jpg" alt="Burger 3">
+                <h3>Bacon Delight</h3>
+                <p>Crispy bacon, beef patty, and cheddar cheese.</p>
+            </div>
+            <div class="item">
+                <img src="/img/burger4.jpg" alt="Burger 4">
+                <h3>Veggie Surprise</h3>
+                <p>Grilled veggies, hummus, and a whole wheat bun.</p>
+            </div>
+        </div>
+        <h2>Special Offers</h2>
+        <div class="special-offers">
+            <div class="offer">
+                <h3>Family Combo</h3>
+                <p>4 burgers, 4 fries, and 4 drinks at a special price.</p>
+            </div>
+            <div class="offer">
+                <h3>Lunch Deal</h3>
+                <p>Burger, fries, and a drink for just $9.99.</p>
+            </div>
+        </div>
+    </section>
+    <section class="about-us">
+        <h2>About Us</h2>
+        <div class="content">
+            <div class="story">
+                <h3>Our Story</h3>
+                <p>Established in 1999, Burger Hut has been serving delicious, handcrafted burgers made with the freshest ingredients. Our journey started with a small family-owned shop and has grown into a beloved chain thanks to our commitment to quality and customer satisfaction.</p>
+            </div>
+            <div class="mission">
+                <h3>Mission Statement</h3>
+                <p>At Burger Hut, we believe in delivering the best burger experience. Our secret recipes, premium beef, and fresh, locally-sourced ingredients ensure that every bite is packed with flavor. We strive to make every visit memorable with our friendly service and cozy atmosphere.</p>
+            </div>
+        </div>
+    </section>
+    <section class="menu-highlights">
+        <h2>Menu Highlights</h2>
+        <div class="tabs">
+            <button class="tablink" onclick="openCategory(event, 'Burgers')">Burgers</button>
+            <button class="tablink" onclick="openCategory(event, 'Sides')">Sides</button>
+            <button class="tablink" onclick="openCategory(event, 'Drinks')">Drinks</button>
+            <button class="tablink" onclick="openCategory(event, 'Desserts')">Desserts</button>
+        </div>
+        <div id="Burgers" class="tabcontent">
+            <div class="item">
+                <img src="/img/burgernew.jpg" alt="Burger 1">
+                <h3>Classic Burger</h3>
+                <p>Juicy beef patty with lettuce, tomato, and cheese.</p>
+            </div>
+            <div class="item">
+                <img src="/img/burgernew2.jpg" alt="Burger 2">
+                <h3>Cheese Lover</h3>
+                <p>Double cheese, beef patty, and a special sauce.</p>
+            </div>
+        </div>
+        <div id="Sides" class="tabcontent">
+            <div class="item">
+                <img src="/img/fries.jpg" alt="Fries">
+                <h3>Golden Fries</h3>
+                <p>Crispy golden fries with a touch of salt.</p>
+            </div>
+            <div class="item">
+                <img src="/img/onion-rings.jpg" alt="Onion Rings">
+                <h3>Onion Rings</h3>
+                <p>Crunchy onion rings with a side of ranch.</p>
+            </div>
+        </div>
+        <div id="Drinks" class="tabcontent">
+            <div class="item">
+                <img src="/img/cola.jpg" alt="Cola">
+                <h3>Classic Cola</h3>
+                <p>Refreshing cola served chilled.</p>
+            </div>
+            <div class="item">
+                <img src="/img/milkshake.jpg" alt="Milkshake">
+                <h3>Vanilla Milkshake</h3>
+                <p>Thick vanilla milkshake with whipped cream.</p>
+            </div>
+        </div>
+        <div id="Desserts" class="tabcontent">
+            <div class="item">
+                <img src="/img/ice-cream.jpg" alt="Ice Cream">
+                <h3>Ice Cream Sundae</h3>
+                <p>Rich vanilla ice cream with chocolate syrup.</p>
+            </div>
+            <div class="item">
+                <img src="/img/brownie.jpg" alt="Brownie">
+                <h3>Chocolate Brownie</h3>
+                <p>Warm chocolate brownie with a scoop of ice cream.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="customer-reviews">
+        <h2>Customer Reviews</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <img src="/img/1.jpeg" alt="Customer 1">
+                <blockquote>"The best burgers I've ever had! Fresh ingredients and amazing taste. Highly recommend!"</blockquote>
+                <div class="rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <p>- Alex</p>
+            </div>
+            <div class="testimonial">
+                <img src="/img/2.jpeg" alt="Customer 2">
+                <blockquote>"I love the variety of burgers and sides. The customer service is top-notch too."</blockquote>
+                <div class="rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <p>- Jamie</p>
+            </div>
+            <div class="testimonial">
+                <img src="/img/3.jpeg" alt="Customer 3">
+                <blockquote>"A must-visit place for burger lovers. The special sauces are a game changer!"</blockquote>
+                <div class="rating">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <p>- Sam</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="location-hours">
+        <h2>Location & Hours</h2>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094095!2d144.95373631531554!3d-37.81627917975185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5772f35b504e563!2sBurger%20Hut!5e0!3m2!1sen!2sus!4v1627898765478!5m2!1sen!2sus"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"></iframe>
+        </div>
+        <div class="hours">
+            <div class="location">
+                <h3>Main Branch</h3>
+                <p>123 Main Street, City</p>
+                <ul>
+                    <li>Monday - Friday: 10:00 AM - 10:00 PM</li>
+                    <li>Saturday: 11:00 AM - 11:00 PM</li>
+                    <li>Sunday: 11:00 AM - 9:00 PM</li>
+                </ul>
+            </div>
+            <div class="location">
+                <h3>West Branch</h3>
+                <p>456 West Avenue, City</p>
+                <ul>
+                    <li>Monday - Friday: 10:00 AM - 10:00 PM</li>
+                    <li>Saturday: 11:00 AM - 11:00 PM</li>
+                    <li>Sunday: 11:00 AM - 9:00 PM</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="newsletter-signup">
+        <h2>Newsletter Signup</h2>
+        <p>Subscribe for exclusive deals and updates.</p>
+        <form>
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+
+
+
+
+    <!-- social media section -->
+
+
+
+    <section class="social-media">
+        <h2>Follow Us</h2>
+        <p>Stay connected with us on social media</p>
+        <div class="social-icons">
+
+            <a href="https://www.facebook.com" target="_blank"  class="social-icon"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://www.instagram.com/amaanshaikh_46/?igsh=MWJyMGV6Ym4zbDZpMA%3D%3D" target="_blank"  class="social-icon"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://x.com/Amaanshaikh_46?t=7oXAvdAApv7oH-cgECTL7Q&s=09" target="_blank"  class="social-icon"><ion-icon name="logo-twitter"></ion-icon></a>
+
+
+
+
+
+
+            <!-- <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                <img src="facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                <img src="twitter-icon.png" alt="Twitter"> -->
+            <!-- </a> -->
+        </div>
+    </section>
+
+
+
+
+    <!-- /////footer section ///// -->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Phone: (91)-7862872844</p>
+                <p>Email: as8055025@gmail.com </p>
+                <p>Address: Ahmedabad,Gujarat,India</p>
+            </div>
+            <div class="legal-links">
+                <h3>Legal Links</h3>
+                <ul>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; copywrites stellar.com All rights reserved.</p>
+            <h5 class="footer-bottom-inner">DESIGNED BY AMAAN SHAIKH</h5>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script>
+        function openCategory(evt, categoryName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(categoryName).style.display = "flex";
+            evt.currentTarget.className += " active";
+        }
+
+        // Set default tab
+        document.getElementsByClassName('tablink')[0].click();
+    </script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Hut</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Burger Hut</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Order Online</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bite into Happiness</h1>
+            <button>Order Now</button>
+        </div>
+    </section>
+    <section class="featured">
+        <h2>Top Sellers</h2>
+        <div class="top-sellers">
+            <div class="item">
+                <img src="/img/burger1.jpg" alt="Burger 1">
+                <h3>Classic Burger</h3>
+                <p>Juicy beef patty with lettuce, tomato, and cheese.</p>
+            </div>
+            <div class="item">
+                <img src="/img/burger2.jpg" alt="Burger 2">
+                <h3>Cheese Lover</h3>
+                <p>Double cheese, beef patty, and a special sauce.</p>
+            </div>
+            <div class="item">
+                <img src="/img/burger3.jpg" alt="Burger 3">
+                <h3>Bacon Delight</h3>
+                <p>Crispy bacon, beef patty, and cheddar cheese.</p>
+            </div>
+            <div class="item">
+                <img src="/img/burger4.jpg" alt="Burger 4">
+                <h3>Veggie Surprise</h3>
+                <p>Grilled veggies, hummus, and a whole wheat bun.</p>
+            </div>
+        </div>
+        <h2>Special Offers</h2>
+        <div class="special-offers">
+            <div class="offer">
+                <h3>Family Combo</h3>
+                <p>4 burgers, 4 fries, and 4 drinks at a special price.</p>
+            </div>
+            <div class="offer">
+                <h3>Lunch Deal</h3>
+                <p>Burger, fries, and a drink for just $9.99.</p>
+            </div>
+        </div>
+    </section>
+    <section class="about-us">
+        <h2>About Us</h2>
+        <div class="content">
+            <div class="story">
+                <h3>Our Story</h3>
+                <p>Established in 1999, Burger Hut has been serving delicious, handcrafted burgers made with the freshest ingredients. Our journey started with a small family-owned shop and has grown into a beloved chain thanks to our commitment to quality and customer satisfaction.</p>
+            </div>
+            <div class="mission">
+                <h3>Mission Statement</h3>
+                <p>At Burger Hut, we believe in delivering the best burger experience. Our secret recipes, premium beef, and fresh, locally-sourced ingredients ensure that every bite is packed with flavor. We strive to make every visit memorable with our friendly service and cozy atmosphere.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+
+
+ -->
